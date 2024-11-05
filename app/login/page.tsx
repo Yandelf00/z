@@ -56,7 +56,7 @@ async function login(_: any, formData: FormData): Promise<ActionResult> {
 
     if (!existingUser ) {
         return {
-            error: "Incorrect username "
+            error: "Incorrect username"
         };
     }
 	if(existingUser){
