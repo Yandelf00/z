@@ -14,19 +14,26 @@ export default async function Page() {
 		return redirect("/");
 	}
 	return (
-		<>
-			<h1>Sign in</h1>
-			<Form action={login}>
-				<label htmlFor="username">Username</label>
-				<input name="username" id="username" />
-				<br />
-				<label htmlFor="password">Password</label>
-				<input type="password" name="password" id="password" />
-				<br />
-				<button>Continue</button>
-			</Form>
-			<Link href="/signup">Create an account</Link>
-		</>
+		<main className="h-screen w-screen bg-black flex justify-center items-center">
+			<section className="h-[70%] w-[70%] flex flex-row">
+				<div className="w-1/2 h-full flex justify-center items-center">
+				<h1 className="text-[300px] font-bold cursor-pointer text-white">Z</h1>
+				</div>
+				<div className="w-1/2 h-full flex justify-center items-center text-white">
+					<h1>Sign in</h1>
+					<Form action={login}>
+						<label htmlFor="username">Username</label>
+						<input name="username" id="username" />
+						<br />
+						<label htmlFor="password">Password</label>
+						<input type="password" name="password" id="password" />
+						<br />
+						<button>Continue</button>
+					</Form>
+					<Link href="/signup">Create an account</Link>
+				</div>
+			</section>
+		</main>
 	);
 }
 
